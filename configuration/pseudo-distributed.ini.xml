@@ -393,7 +393,7 @@
    {% if usersync_enabled and usersync_source == 'ldap' %}
     base_dn={{usersync_ldap_base_dn}}
     ldap_url={{usersync_ldap_url}}
-    nt_domain={{usersync_ldap_nt_domain}}
+    #nt_domain={{usersync_ldap_nt_domain}}
     ldap_cert={{usersync_ldap_cert}}
     use_start_tls={{usersync_ldap_use_start_tls}}
     bind_dn={{usersync_ldap_bind_dn}}
@@ -955,7 +955,7 @@
       history_server_api_url={{history_server_api_url}}
 
       # URL of the Spark History Server
-      spark_history_server_url=http://localhost:18088
+      spark_history_server_url=
 
       # In secure mode (HTTPS), if SSL certificates from YARN Rest APIs
       # have to be verified against certificate authority
