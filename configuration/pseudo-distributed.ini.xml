@@ -109,7 +109,7 @@
   ssl_private_key={{desktop_ssl_private_key}}
   ssl_certificate_chain={{desktop_ssl_certificate_chain}}
   ssl_password={{desktop_ssl_password}}
-  {% if ssl_password.strip() == '' %}
+  {% if desktop_ssl_password.strip() == '' %}
   ssl_password_script={{desktop_ssl_password_script}}
   {% else %}
   ## ssl_password_script=

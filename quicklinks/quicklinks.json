@@ -9,7 +9,7 @@
         {
           "property":"ssl_enable",
           "desired":"true",
-          "site":"hue-site"
+          "site":"hue-desktop-site"
         }
       ]
     },
@@ -22,12 +22,12 @@
         "component_name": "HUE_SERVER",
         "url":"%@://%@:%@/",
         "port":{
-          "http_property": "hue.server.port",
-          "http_default_port": "8888",
-          "https_property": "hue.server.port",
-          "https_default_port": "8888",
+          "http_property": "http_port",
+          "http_default_port": "8889",
+          "https_property": "http_port",
+          "https_default_port": "8443",
           "regex": "^(\\d+)$",
-          "site": "hue-site"
+          "site": "hue-env"
         }
       }
     ]
