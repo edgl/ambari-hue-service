@@ -10,7 +10,7 @@
         "scope": "HOST",
         "source": {
           "type": "PORT",
-          "uri": "{{hue-env/hue.port}}",
+          "uri": "{{hue-env/http_port}}",
           "default_port": 8888,
           "reporting": {
             "ok": {
